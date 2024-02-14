@@ -575,9 +575,9 @@ if __name__ == '__main__':
                 )
         diff = differ.get_diff()
         if diff:
-            print file_header(args.file1, '---')
-            print file_header(args.file2, '+++')
-            print diff
+            print(file_header(args.file1, '---'))
+            print(file_header(args.file2, '+++'))
+            print(diff)
 
     elif args.style == 'c':
         differ = ContextDiffer(
@@ -590,9 +590,9 @@ if __name__ == '__main__':
                 )
         diff = differ.get_diff()
         if diff:
-            print file_header(args.file1, '***')
-            print file_header(args.file2, '---')
-            print diff
+            print(file_header(args.file1, '***'))
+            print(file_header(args.file2, '---'))
+            print(diff)
 
     elif args.style == 'n':
         differ = NormalDiffer(
@@ -604,7 +604,7 @@ if __name__ == '__main__':
                 )
         diff = differ.get_diff()
         if diff:
-            print diff
+            print(diff)
 
     elif args.style == 'w':
         differ = WordDiffer(
@@ -619,4 +619,4 @@ if __name__ == '__main__':
                 )
         diff = differ.get_diff()
         if diff:
-            print diff
+            print(diff)
